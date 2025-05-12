@@ -13,7 +13,7 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: first step in windows job
-      - run: date
+        run: date
       - run: ls
   dependent-job-1:
     needs: [job-on-ubuntu, job-on-windows]
